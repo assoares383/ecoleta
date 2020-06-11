@@ -13,6 +13,7 @@ import {
 import MapView, { Marker } from "react-native-maps";
 import { SvgUri } from "react-native-svg";
 import * as Location from "expo-location";
+
 import api from "../../services/api";
 
 import styles from "./styles";
@@ -84,6 +85,12 @@ const Points = () => {
         setPoints(response.data);
       });
   }, [selectedItems]);
+
+  useEffect(() => {
+    api.get("items").then((response) => {
+      setItems(response.data);
+    });
+  }, []);
 
   function handleNavigateBack() {
     navigation.goBack();
