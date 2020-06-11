@@ -26,6 +26,14 @@ const styles = StyleSheet.create({
   },
   footer: {},
   select: {},
+  input: {
+    height: 60,
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    marginBottom: 8,
+    paddingHorizontal: 24,
+    fontSize: 16,
+  },
   button: {
     backgroundColor: "#34CB79",
     height: 60,
@@ -33,6 +41,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     overflow: "hidden",
     alignItems: "center",
+    marginTop: 8,
   },
   buttonIcon: {
     width: 60,
